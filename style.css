@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-area {
+    display: flex;
+    margin-top: 400px;
+}
+
+#game-button {
+    flex: 1;
+    display: flex;
+    margin-left: 60px;
+    flex-direction: column;
+    gap: 47px;
+}
+
+#area {
+    background-color: hsl(141, 71%, 48%);
+    position: relative;
+    flex: 1;
+}
+
+.head {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: hsl(171, 100%, 29%);
+    top: 100px;
+    left: 100px;
+}
+
+.food{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: hsl(348, 100%, 61%);
+    border: none;
+}
