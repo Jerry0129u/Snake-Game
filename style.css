@@ -1,47 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
-#game-area {
-    display: flex;
-    margin-top: 400px;
-}
-
-#game-button {
-    flex: 1;
-    display: flex;
-    margin-left: 60px;
-    flex-direction: column;
-    gap: 47px;
-}
-
-#area {
+.area {
     background-color: hsl(141, 71%, 48%);
     position: relative;
-    flex: 1;
+    width: 300px;
+    height: 300px; 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
-.head {
+.part {
     width: 20px;
     height: 20px;
     position: absolute;
     background-color: hsl(171, 100%, 29%);
-    top: 100px;
-    left: 100px;
+    border-radius: 5px;
 }
 
-.food{
+.food {
     width: 20px;
     height: 20px;
     position: absolute;
     background-color: hsl(348, 100%, 61%);
     border: none;
 }
+
+.button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 5px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+
+

@@ -7,25 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Snake</title>
 </head>
-<body onkeydown="handleKeydown(event);">
+<body>
 
-<div id="game-area">
 
-    <div id="area">
-    <div class="food" id="food"></div>
-    <div class="head" id="head"></div>
+    <div class="area" id="area">
+        <div class="food" id="food"></div>
+        <div id="body"></div>
     </div>
 
-    <div id="game-button">
+        <button class="button" id="upButton"></button>
+        <button class="button" id="rightButton"></button>
+        <button class="button" id="downButton"></button>
+        <button class="button" id="leftButton">Left</button>
 
-    <button class="button" onclick="changeDirection('up');">Up ⬆️</button>
-    <button class="button" onclick="changeDirection('right');">Right ➡️</button>
-    <button class="button" onclick="changeDirection('down');">Down ⬇️</button>
-    <button class="button" onclick="changeDirection('left');">Left ⬅️</button>
-    
-    </div>
 
-</div>
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
+ 
